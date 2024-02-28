@@ -1,6 +1,13 @@
 name: CI/CD Pipeline
 
 on: push
+
+defaults:
+    run:
+      working-directory: modern-web-app
+
+env:
+    NODE_VERSION: "20.9"
 jobs:
     test:
       name: Test
